@@ -12,14 +12,14 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: #262433;
+  background:rgb(255, 255, 255)
 }
 
 .navigation {
   position: relative;
   width: 540px;
   height: 120px;
-  background: #242433;
+  background: #000000;
   box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.5),
     inset 5px 5px 20px rgba(255, 255, 255, 0.2),
     inset -5px -5px 15px rgba(0, 0, 0, 0.75);
@@ -50,7 +50,7 @@ body {
 }
 
 .navigation li.active::before {
-  background: #0f0;
+  background: rgb(255, 255, 255);
   box-shadow: 0 0 5px #0f0, 0 0 10px #0f0, 0 0 20px #0f0, 0 0 30px #0f0,
     0 0 40px #0f0, 0 0 50px #0f0;
 }
@@ -71,15 +71,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #aaa;
+  color: #ffffff;
   border-radius: 50px;
   transition: 0.5s;
   transition-delay: 0.2s;
 }
 
 .navigation li.active a .icon {
-  background: #29fd53;
-  color: #fff;
+  background: #ff0000;
+  color: #000000;
   transform: translateY(-55px);
   box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25),
     inset 2px 2px 3px rgba(255, 255, 255, 0.25),
@@ -91,7 +91,7 @@ body {
   content: "";
   position: absolute;
   inset: 10px;
-  background: #2f363e;
+  background: #ffffff;
   border-radius: 50%;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5),
     inset 2px 2px 3px rgba(255, 255, 255, 0.25),
@@ -107,12 +107,14 @@ body {
 .navigation li a .text {
   position: absolute;
   font-size: 0.75em;
-  color: #2f363e;
+  font-weight: 900;
+  color: #000000;
   opacity: 0;
   transform: translateY(20px);
   padding: 2px 10px;
-  background: #fff;
+  background: #ffffff;
   border-radius: 15px;
+  border: 2px solid red;
   box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25),
     inset -3px -3px 5px rgba(0, 0, 0, 0.5);
   transition: 0.5s;
@@ -124,3 +126,40 @@ body {
   transform: translateY(10px);
   transition-delay: 0.2s;
 }
+
+
+/*redesigner*/
+
+h4{
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+  color: rgb(179, 0, 255);
+  text-decoration: none;
+  letter-spacing: 1.5px;
+}
+
+.bottom a:nth-child(1) {
+  text-decoration: none;
+  transition:all 0.5s;
+}
+
+.bottom a:nth-child(1):hover {
+  text-decoration: none;
+  letter-spacing:5px;
+  transition:all 0.5s;
+}
+
+.bottom a:nth-child(3) {
+  letter-spacing: normal;
+  font-size:16px;
+  text-decoration: none;
+}
+
+.bottom a:nth-child(3):hover {
+  text-decoration: none;
+  }
+
